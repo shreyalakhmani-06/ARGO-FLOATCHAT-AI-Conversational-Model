@@ -1,0 +1,1989 @@
+{
+  "Regex baseline": [
+    {
+      "question": "How warm is the water at the surface in the Arabian Sea?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "parameters": {
+          "got": "[]",
+          "expected": "['TEMP']"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "25"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "50"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "77"
+        },
+        "depth_max": {
+          "got": "None",
+          "expected": "10"
+        }
+      }
+    },
+    {
+      "question": "Show the salinity profile for float 2900229",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "plot"
+        },
+        "chart": {
+          "got": "None",
+          "expected": "depth_profile"
+        }
+      }
+    },
+    {
+      "question": "List floats in the Equatorial Indian Ocean during 2003",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "list_floats"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "-10"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "40"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "100"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2003-01-01"
+        },
+        "date_end": {
+          "got": "None",
+          "expected": "2003-12-31"
+        }
+      }
+    },
+    {
+      "question": "What was the temperature near 10N 85E in June 2024?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "8"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "12"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "83"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "87"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2024-06-01"
+        },
+        "date_end": {
+          "got": "None",
+          "expected": "2024-06-30"
+        }
+      }
+    },
+    {
+      "question": "Plot temperature vs salinity for float 2900335",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What does QC flag 3 mean?",
+      "ok": false,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "explain"
+        }
+      }
+    },
+    {
+      "question": "Which floats are in the southern Indian Ocean?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "list_floats"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "-45"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "-10"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "20"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "120"
+        }
+      }
+    },
+    {
+      "question": "What is the salinity at 1000 m for float 2900229?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "depth_target": {
+          "got": "None",
+          "expected": "1000"
+        }
+      }
+    },
+    {
+      "question": "Are there any floats around 8N 90E in 2025?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "list_floats"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "6"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "10"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "88"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "92"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2025-01-01"
+        },
+        "date_end": {
+          "got": "None",
+          "expected": "2025-12-31"
+        }
+      }
+    },
+    {
+      "question": "Plot salinity in the Bay of Bengal below 300 m",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "plot"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "23"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "78"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "100"
+        },
+        "depth_min": {
+          "got": "None",
+          "expected": "300"
+        },
+        "chart": {
+          "got": "None",
+          "expected": "depth_profile"
+        }
+      }
+    },
+    {
+      "question": "What is practical salinity?",
+      "ok": false,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "explain"
+        }
+      }
+    },
+    {
+      "question": "Average temperature at 200 m near 15N 88E",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "13"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "17"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "86"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "90"
+        },
+        "depth_target": {
+          "got": "None",
+          "expected": "200"
+        }
+      }
+    },
+    {
+      "question": "Plot temperature profiles in the Arabian Sea in March 2004",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "plot"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "25"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "50"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "77"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2004-03-01"
+        },
+        "date_end": {
+          "got": "None",
+          "expected": "2004-03-31"
+        },
+        "chart": {
+          "got": "None",
+          "expected": "depth_profile"
+        }
+      }
+    },
+    {
+      "question": "What is the surface salinity of float 1902671?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "depth_max": {
+          "got": "None",
+          "expected": "10"
+        }
+      }
+    },
+    {
+      "question": "Which floats were active recently near 5N 80E?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "list_floats"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "3"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "7"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "78"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "82"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2024-01-01"
+        }
+      }
+    },
+    {
+      "question": "Show temperature and salinity for float 2900340 in 2004",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "plot"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2004-01-01"
+        },
+        "date_end": {
+          "got": "None",
+          "expected": "2004-12-31"
+        }
+      }
+    },
+    {
+      "question": "Which floats are near 12S 80E?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "list_floats"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "-14"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "-10"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "78"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "82"
+        }
+      }
+    },
+    {
+      "question": "Plot temperature below 1000 m for float 1900121",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "plot"
+        },
+        "depth_min": {
+          "got": "None",
+          "expected": "1000"
+        },
+        "chart": {
+          "got": "None",
+          "expected": "depth_profile"
+        }
+      }
+    },
+    {
+      "question": "What is the maximum salinity in the Arabian Sea in 2003?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "25"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "50"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "77"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2003-01-01"
+        },
+        "date_end": {
+          "got": "None",
+          "expected": "2003-12-31"
+        }
+      }
+    },
+    {
+      "question": "Explain what a T-S diagram is",
+      "ok": false,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "explain"
+        }
+      }
+    },
+    {
+      "question": "Show temperature vs salinity in the Bay of Bengal in 2024",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "23"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "78"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "100"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2024-01-01"
+        },
+        "date_end": {
+          "got": "None",
+          "expected": "2024-12-31"
+        }
+      }
+    },
+    {
+      "question": "Plot salinity between 100 and 200 m for float 2900275",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "plot"
+        },
+        "depth_min": {
+          "got": "None",
+          "expected": "100"
+        },
+        "depth_max": {
+          "got": "None",
+          "expected": "200"
+        },
+        "chart": {
+          "got": "None",
+          "expected": "depth_profile"
+        }
+      }
+    },
+    {
+      "question": "Which floats are at 20N 65E?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "intent": {
+          "got": "value",
+          "expected": "list_floats"
+        },
+        "lat_min": {
+          "got": "None",
+          "expected": "18"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "22"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "63"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "67"
+        }
+      }
+    },
+    {
+      "question": "What was the temperature at 50 m near 8S 75E in January 2025?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "-10"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "-6"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "73"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "77"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2025-01-01"
+        },
+        "date_end": {
+          "got": "None",
+          "expected": "2025-01-31"
+        },
+        "depth_target": {
+          "got": "None",
+          "expected": "50"
+        }
+      }
+    }
+  ],
+  "LLM only (no retrieval)": [
+    {
+      "question": "How warm is the water at the surface in the Arabian Sea?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "25"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "50"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "77"
+        },
+        "depth_min": {
+          "got": "0.0",
+          "expected": "None"
+        },
+        "depth_max": {
+          "got": "0.0",
+          "expected": "10"
+        },
+        "depth_target": {
+          "got": "0.0",
+          "expected": "None"
+        }
+      }
+    },
+    {
+      "question": "Show the salinity profile for float 2900229",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "List floats in the Equatorial Indian Ocean during 2003",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_max": {
+          "got": "10.0",
+          "expected": "5"
+        },
+        "lon_min": {
+          "got": "30.0",
+          "expected": "40"
+        },
+        "lon_max": {
+          "got": "120.0",
+          "expected": "100"
+        }
+      }
+    },
+    {
+      "question": "What was the temperature near 10N 85E in June 2024?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "10.0",
+          "expected": "8"
+        },
+        "lat_max": {
+          "got": "10.0",
+          "expected": "12"
+        },
+        "lon_min": {
+          "got": "85.0",
+          "expected": "83"
+        },
+        "lon_max": {
+          "got": "85.0",
+          "expected": "87"
+        }
+      }
+    },
+    {
+      "question": "Plot temperature vs salinity for float 2900335",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What does QC flag 3 mean?",
+      "ok": true,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Which floats are in the southern Indian Ocean?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "-90.0",
+          "expected": "-45"
+        },
+        "lat_max": {
+          "got": "0.0",
+          "expected": "-10"
+        }
+      }
+    },
+    {
+      "question": "What is the salinity at 1000 m for float 2900229?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Are there any floats around 8N 90E in 2025?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "8.0",
+          "expected": "6"
+        },
+        "lat_max": {
+          "got": "8.0",
+          "expected": "10"
+        },
+        "lon_min": {
+          "got": "90.0",
+          "expected": "88"
+        },
+        "lon_max": {
+          "got": "90.0",
+          "expected": "92"
+        }
+      }
+    },
+    {
+      "question": "Plot salinity in the Bay of Bengal below 300 m",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "0.0",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "25.0",
+          "expected": "23"
+        },
+        "lon_min": {
+          "got": "80.0",
+          "expected": "78"
+        }
+      }
+    },
+    {
+      "question": "What is practical salinity?",
+      "ok": true,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Average temperature at 200 m near 15N 88E",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "15.0",
+          "expected": "13"
+        },
+        "lat_max": {
+          "got": "15.0",
+          "expected": "17"
+        },
+        "lon_min": {
+          "got": "88.0",
+          "expected": "86"
+        },
+        "lon_max": {
+          "got": "88.0",
+          "expected": "90"
+        },
+        "depth_min": {
+          "got": "200.0",
+          "expected": "None"
+        },
+        "depth_max": {
+          "got": "200.0",
+          "expected": "None"
+        }
+      }
+    },
+    {
+      "question": "Plot temperature profiles in the Arabian Sea in March 2004",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "25"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "50"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "77"
+        }
+      }
+    },
+    {
+      "question": "What is the surface salinity of float 1902671?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "depth_min": {
+          "got": "0.0",
+          "expected": "None"
+        },
+        "depth_max": {
+          "got": "0.0",
+          "expected": "10"
+        },
+        "depth_target": {
+          "got": "0.0",
+          "expected": "None"
+        }
+      }
+    },
+    {
+      "question": "Which floats were active recently near 5N 80E?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "5.0",
+          "expected": "3"
+        },
+        "lat_max": {
+          "got": "5.0",
+          "expected": "7"
+        },
+        "lon_min": {
+          "got": "80.0",
+          "expected": "78"
+        },
+        "lon_max": {
+          "got": "80.0",
+          "expected": "82"
+        },
+        "date_start": {
+          "got": "None",
+          "expected": "2024-01-01"
+        }
+      }
+    },
+    {
+      "question": "Show temperature and salinity for float 2900340 in 2004",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Which floats are near 12S 80E?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "-12.0",
+          "expected": "-14"
+        },
+        "lat_max": {
+          "got": "-12.0",
+          "expected": "-10"
+        },
+        "lon_min": {
+          "got": "80.0",
+          "expected": "78"
+        },
+        "lon_max": {
+          "got": "80.0",
+          "expected": "82"
+        }
+      }
+    },
+    {
+      "question": "Plot temperature below 1000 m for float 1900121",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What is the maximum salinity in the Arabian Sea in 2003?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "25"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "50"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "77"
+        }
+      }
+    },
+    {
+      "question": "Explain what a T-S diagram is",
+      "ok": true,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Show temperature vs salinity in the Bay of Bengal in 2024",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "None",
+          "expected": "5"
+        },
+        "lat_max": {
+          "got": "None",
+          "expected": "23"
+        },
+        "lon_min": {
+          "got": "None",
+          "expected": "78"
+        },
+        "lon_max": {
+          "got": "None",
+          "expected": "100"
+        }
+      }
+    },
+    {
+      "question": "Plot salinity between 100 and 200 m for float 2900275",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Which floats are at 20N 65E?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "20.0",
+          "expected": "18"
+        },
+        "lat_max": {
+          "got": "20.0",
+          "expected": "22"
+        },
+        "lon_min": {
+          "got": "65.0",
+          "expected": "63"
+        },
+        "lon_max": {
+          "got": "65.0",
+          "expected": "67"
+        }
+      }
+    },
+    {
+      "question": "What was the temperature at 50 m near 8S 75E in January 2025?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "lat_min": {
+          "got": "-8.0",
+          "expected": "-10"
+        },
+        "lat_max": {
+          "got": "-8.0",
+          "expected": "-6"
+        },
+        "lon_min": {
+          "got": "75.0",
+          "expected": "73"
+        },
+        "lon_max": {
+          "got": "75.0",
+          "expected": "77"
+        },
+        "depth_min": {
+          "got": "50.0",
+          "expected": "None"
+        },
+        "depth_max": {
+          "got": "50.0",
+          "expected": "None"
+        }
+      }
+    }
+  ],
+  "LLM + RAG": [
+    {
+      "question": "How warm is the water at the surface in the Arabian Sea?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "depth_min": {
+          "got": "0.0",
+          "expected": "None"
+        }
+      }
+    },
+    {
+      "question": "Show the salinity profile for float 2900229",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "List floats in the Equatorial Indian Ocean during 2003",
+      "ok": true,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What was the temperature near 10N 85E in June 2024?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Plot temperature vs salinity for float 2900335",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What does QC flag 3 mean?",
+      "ok": true,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Which floats are in the southern Indian Ocean?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What is the salinity at 1000 m for float 2900229?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Are there any floats around 8N 90E in 2025?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Plot salinity in the Bay of Bengal below 300 m",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What is practical salinity?",
+      "ok": true,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Average temperature at 200 m near 15N 88E",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Plot temperature profiles in the Arabian Sea in March 2004",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What is the surface salinity of float 1902671?",
+      "ok": false,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {
+        "depth_min": {
+          "got": "0.0",
+          "expected": "None"
+        }
+      }
+    },
+    {
+      "question": "Which floats were active recently near 5N 80E?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Show temperature and salinity for float 2900340 in 2004",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Which floats are near 12S 80E?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Plot temperature below 1000 m for float 1900121",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What is the maximum salinity in the Arabian Sea in 2003?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Explain what a T-S diagram is",
+      "ok": true,
+      "checked": [
+        "intent"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Show temperature vs salinity in the Bay of Bengal in 2024",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Plot salinity between 100 and 200 m for float 2900275",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target",
+        "chart"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "Which floats are at 20N 65E?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    },
+    {
+      "question": "What was the temperature at 50 m near 8S 75E in January 2025?",
+      "ok": true,
+      "checked": [
+        "intent",
+        "parameters",
+        "platform_numbers",
+        "lat_min",
+        "lat_max",
+        "lon_min",
+        "lon_max",
+        "date_start",
+        "date_end",
+        "depth_min",
+        "depth_max",
+        "depth_target"
+      ],
+      "wrong": {}
+    }
+  ]
+}

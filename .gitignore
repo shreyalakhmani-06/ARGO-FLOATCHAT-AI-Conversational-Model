@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+env/
+*.sqlite3
+
+# Node
+node_modules/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+.env
+chroma_db/
+__pycache__/
+
+Database/notebooks/
+Database/db/
+Database/data/
+Database/extra_data/
+Database/csv_data/
+Database/cleaned_data/
+.ipynb_checkpoints/
+llm_cache.json
+*.pdf

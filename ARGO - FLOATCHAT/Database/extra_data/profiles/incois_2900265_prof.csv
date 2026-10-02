@@ -1,6 +1,0 @@
-N_PROF,N_LEVELS,PLATFORM_NUMBER,PROJECT_NAME,PI_NAME,CYCLE_NUMBER,DIRECTION,JULD,JULD_QC,LATITUDE,LONGITUDE,POSITION_QC,POSITIONING_SYSTEM,PRES,TEMP,PSAL
-0,0,b'2900265 ',b'Argo INDIA                                                      ',b'M Ravichandran                                                  ',1.0,b'A',2003-09-12 00:30:00,b'1',17.762,90.208,b'1',b'ARGOS   ',39.9,28.423,33.737
-1,0,b'2900265 ',b'Argo INDIA                                                      ',b'M Ravichandran                                                  ',2.0,b'A',2003-09-17 00:18:00,b'1',18.068,90.439,b'1',b'ARGOS   ',9.8,28.365,28.921
-2,0,b'2900265 ',b'Argo INDIA                                                      ',b'M Ravichandran                                                  ',3.0,b'A',2003-09-22 00:18:00,b'1',18.242,90.403,b'1',b'ARGOS   ',8.4,29.072,28.849
-3,0,b'2900265 ',b'Argo INDIA                                                      ',b'M Ravichandran                                                  ',4.0,b'A',2003-09-27 00:18:00,b'1',18.748,90.038,b'1',b'ARGOS   ',9.6,29.3,30.207
-4,0,b'2900265 ',b'Argo INDIA                                                      ',b'M Ravichandran                                                  ',5.0,b'A',2003-10-02 00:18:00,b'1',19.53,89.924,b'1',b'ARGOS   ',9.7,30.044,28.819
